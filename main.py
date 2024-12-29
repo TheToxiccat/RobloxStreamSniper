@@ -24,7 +24,7 @@ class ProgressBar:
         self.printEnd = printEnd
         self.iteration = 0
 
-    def print(self):
+    def print(self)
         percent = ("{0:." + str(self.decimals) + "f}").format(100 * (self.iteration / float(self.total)))
         filledLength = int(self.length * self.iteration // self.total)
         bar = self.fill * filledLength + '-' * (self.length - filledLength)
